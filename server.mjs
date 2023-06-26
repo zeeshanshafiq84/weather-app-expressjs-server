@@ -14,9 +14,8 @@ app.get('/profile',(req, res) =>{
 app.get('/weather/:cityName', (req, res) => {
   console.log('this is profile!', new Date());
 
-  console.log("req.params.cityName: ", req.params.cityName)
+  console.log("req.params.cityName: ", req.params.cityName);
 
-    let cityName = document.querySelector("#cityName").value;
 
     
 

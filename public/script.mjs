@@ -8,6 +8,10 @@
   .then(function (response) {
     // handle success
     console.log(response.data);
+    
+    
+    let cityName = document.querySelector("#cityName")
+    document.querySelector(".cityName").innerText = cityName.value
     document.querySelector(".temp").innerHTML = `${response.data.name} ${response.data.main.temp}°C`
     document.querySelector('.humidity').innerHTML = `${response.data.main.humidity}%`
     document.querySelector('.wind').innerHTML = `${response.data.wind.speed}`
